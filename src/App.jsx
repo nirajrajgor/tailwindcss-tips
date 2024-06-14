@@ -1,6 +1,6 @@
 import "./App.css";
 import Hr from "./Hr";
-import Title from "./section-title";
+import Title from "./Title";
 
 function App() {
   return (
@@ -36,6 +36,18 @@ function App() {
         <li className="size-16 bg-red-300">Item 1</li>
         <li className="size-16 bg-red-400">Item 2</li>
         <li className="size-16 bg-red-500">Item 3</li>
+      </ul>
+      <Hr />
+      <Title text="Example 3: Don't overuse @apply utility classes" />
+      <h4>
+        Description: Using custom classname like <b>nav-items</b> and adding
+        tailwind classes in css files using <b>@apply</b> can cause problems
+        like name collisions and hard to maintain code.
+      </h4>
+      <ul className="nav-items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
       </ul>
       <Hr />
     </section>

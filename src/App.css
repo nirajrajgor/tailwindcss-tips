@@ -1,0 +1,7 @@
+ul.nav-items {
+  @apply flex flex-row space-x-3;
+}
+
+ul.nav-items li {
+  @apply size-12 bg-blue-300;
+}

@@ -40,9 +40,10 @@ function App() {
       <Hr />
       <Title text="Example 3: Don't overuse @apply utility classes" />
       <h4>
-        Description: Using custom classname like <b>nav-items</b> and adding
-        tailwind classes in css files using <b>@apply</b> can cause problems
-        like name collisions and hard to maintain code.
+        Description: Using custom classname like{" "}
+        <code className="bg-gray-200 p-1">.nav-items</code> and adding tailwind
+        classes in css files using <b>@apply</b> can cause problems like name
+        collisions and hard to maintain code.
       </h4>
       <ul className="nav-items">
         <li>Item 1</li>
@@ -50,6 +51,28 @@ function App() {
         <li>Item 3</li>
       </ul>
       <Hr />
+      <Title text="Example 4: Adding opacity to background & text" />
+      <h4>
+        You can apply opacity to background and text using{" "}
+        <code className="bg-gray-200 p-1">
+          .bg-opacity-* & .text-opacity-*{" "}
+        </code>{" "}
+      </h4>
+      <div className="bg-teal-700 bg-opacity-50 w-[200px]">
+        <p className="text-blue-700 text-opacity-70">tailwind css text</p>
+      </div>
+      <Hr />
+      <Title text="Example 5: Adding Transition & Animation " />
+      <h4>transition-* * duration-* property to be used</h4>
+      <button className="p-2 text-white rounded bg-blue-500 hover:bg-blue-700 active:bg-blue-900 transition-colors duration-200">
+        Buy Items
+      </button>
+      <Hr />
+      <Title text="Example 6: External tailwind libraries to speed up development and copy the code" />
+      <ul>
+        <li>DaisyUI</li>
+        <li>Flowbite</li>
+      </ul>
     </section>
   );
 }

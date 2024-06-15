@@ -68,7 +68,31 @@ function App() {
         Buy Items
       </button>
       <Hr />
-      <Title text="Example 6: External tailwind libraries to speed up development and copy the code" />
+      <Title text="Example 6: Group hover example" />
+      <h4>
+        Hover on button will rotate the icon present inside the button, this can
+        be done using group classname on button and group-hover:property
+        classname on child element
+      </h4>
+      <button className="p-2 text-white rounded group bg-blue-500 hover:bg-blue-700 active:bg-blue-900 transition-colors duration-200">
+        <span>Click!</span>
+        <span className="ml-2 inline-block group-hover:rotate-90 duration-300">
+          &rarr;
+        </span>
+      </button>
+      <Hr />
+      <Title text="Example 7: Using pseudo classes" />
+      <h4>The below button background is added using after pseudo class</h4>
+      <button className="p-2 relative after:absolute after:bg-green-300 after:inset-0 after:z-0">
+        <h6 className="z-10 relative">BUTTON </h6>
+      </button>
+      <Hr />
+      <Title text="Example 8: Adding Custom input values" />
+      <h4>Can be added using property-[value] syntax</h4>
+      <h5 className="text-[#007bff] text-[4rem]">Hello World</h5>
+      <Hr />
+
+      <Title text="Example 9: External tailwind libraries to speed up development and copy the code" />
       <ul>
         <li>DaisyUI</li>
         <li>Flowbite</li>

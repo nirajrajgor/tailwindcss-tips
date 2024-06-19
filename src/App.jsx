@@ -1,50 +1,53 @@
 import "./App.css";
+import Description from "./Description";
 import Hr from "./Hr";
 import Title from "./Title";
 
 function App() {
   return (
-    <section className="container mx-auto px-4 py-12 border-2 border-rose-600">
-      <h1 className="text-3xl font-bold">Hello world!</h1>
-      <Title text="Example 1: Delegate classes to parent" />
-      <h4>
-        Description: Instead of using <b>text-2xl</b> on each li, we can use the
-        same class on the ul
-      </h4>
-      <nav>
-        {/* TODO: Group */}
-        <ul className="flex flex-wrap text-2xl text-gray-900 p-1">
-          <li className="mr-4 bg-gray-200 text-blue-400 p-1">
-            <a href="#">Home</a>
-          </li>
-          <li className="mr-4 p-1">
-            <a href="#">About</a>
-          </li>
-          <li className="mr-4 p-1">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <main className="container mx-auto px-4 py-12 border-2 border-rose-600">
+      <section className="shadow bg-white p-4 rounded-lg">
+        {/* <h1 className="text-3xl font-bold">Hello world!</h1> */}
+        <Title text="1. Delegate classes to parent" />
+        <Description>
+          Instead of using <b>text-2xl</b> on each li, we can use the same class
+          on the ul
+        </Description>
+        <nav>
+          {/* TODO: Group */}
+          <ul className="flex flex-wrap text-2xl text-teal-900 text-opacity-30 p-1">
+            <li className="mr-4 bg-gray-200 text-blue-400 p-1">
+              <a href="#">Home</a>
+            </li>
+            <li className="mr-4 p-1">
+              <a href="#">About</a>
+            </li>
+            <li className="mr-4 p-1">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
       <Hr />
       <Title text="Example 2: Adding space between elements" />
-      <h4>
+      <Description>
         Description: Instead of using <b>gap-*, margin, padding</b> property on
         each child, we can use the <b>space-x-*, space-y-*</b> property on the
         parent
-      </h4>
-      <ul className="flex flex-row space-x-3">
-        <li className="size-16 bg-red-300">Item 1</li>
-        <li className="size-16 bg-red-400">Item 2</li>
-        <li className="size-16 bg-red-500">Item 3</li>
+      </Description>
+      <ul className="flex flex-row space-x-5">
+        <li className="size-16 bg-red-400">Item 1</li>
+        <li className="size-16 bg-red-500">Item 2</li>
+        <li className="size-16 bg-red-600">Item 3</li>
       </ul>
       <Hr />
       <Title text="Example 3: Don't overuse @apply utility classes" />
-      <h4>
-        Description: Using custom classname like{" "}
+      <Description>
+        Using custom classname like{" "}
         <code className="bg-gray-200 p-1">.nav-items</code> and adding tailwind
         classes in css files using <b>@apply</b> can cause problems like name
         collisions and hard to maintain code.
-      </h4>
+      </Description>
       <ul className="nav-items">
         <li>Item 1</li>
         <li>Item 2</li>
@@ -96,8 +99,17 @@ function App() {
       <ul>
         <li>DaisyUI</li>
         <li>Flowbite</li>
+        <li>
+          Tailwind cheatsheet - https://tailwindcomponents.com/cheatsheet/
+        </li>
       </ul>
-    </section>
+      <Hr />
+      <Title text="Example 10: problems with tailwind" />
+      <h4>
+        1. Ugly looking html, jsx 2. Duplicated classname (can be avoided by
+        creating components, e.g Navlinks) 3.
+      </h4>
+    </main>
   );
 }
 

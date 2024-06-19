@@ -3,5 +3,5 @@ ul.nav-items {
 }
 
 ul.nav-items li {
-  @apply size-12 bg-blue-300;
+  @apply size-14 bg-blue-300;
 }

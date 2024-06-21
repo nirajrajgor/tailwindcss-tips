@@ -2,7 +2,7 @@
   "name": "tailwindcss-tips",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nirajrajgor.github.io/tailwindcss-tips-examples/",
+  "homepage": "https://nirajrajgor.github.io/tailwindcss-tips/",
   "type": "module",
   "scripts": {
     "dev": "vite",

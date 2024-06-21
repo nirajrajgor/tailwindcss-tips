@@ -1,8 +1,16 @@
-# React + Vite
+# Top Tailwind CSS Tips with examples
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Take your Tailwind CSS project to the next level with the help of Tailwind CSS examples shown in this repository.
 
-Currently, two official plugins are available:
+### [**View the demo**](https://nirajrajgor.github.io/tailwindcss-tips/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Find the code in the [src/App.jsx](https://github.com/nirajrajgor/tailwindcss-tips/blob/main/src/App.jsx) file.
+
+## Available Scripts
+
+This project is a developed using React + Vite.
+In the project directory, you can run:
+
+#### `npm install` to install deps.
+
+#### `npm run dev` to run local dev server

@@ -9,7 +9,7 @@ function App() {
       <h1 className="text-4xl font-bold max-w-3xl mb-2 mx-auto text-center">
         Tips and Tricks with Tailwind CSS
       </h1>
-      <h2 className="mb-8 text-base text-gray-500 sm:text-lg max-w-3xl mx-auto text-center dark:text-gray-400">
+      <h2 className="mb-8 text-base text-gray-500 sm:text-lg max-w-3xl mx-auto text-center">
         Learn how to tailor your Tailwind CSS project with the help of Tailwind
         CSS examples shown below.
       </h2>
@@ -132,7 +132,7 @@ function App() {
           href="https://github.com/nirajrajgor/tailwindcss-tips"
           target="_blank"
           rel="noreferrer"
-          className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          className="font-medium text-blue-600 hover:underline"
         >
           Github
         </a>
